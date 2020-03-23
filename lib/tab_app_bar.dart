@@ -17,9 +17,15 @@ class TabAppBar extends StatelessWidget implements PreferredSizeWidget {
             builder: (ctx, drinks, _) {
               return Text(drinks.totalAmountString);
             },
-          )
+          ),
         ],
       ),
+      actions: <Widget>[
+        IconButton(
+          icon: Icon(Icons.money_off),
+          onPressed: Provider.of<Drinks>(context, listen: false).clear,
+        ),
+      ],
       bottom: TabBar(tabs: <Widget>[
         Tab(child: Text('Getränke')),
         Tab(child: Text('Pfand')),

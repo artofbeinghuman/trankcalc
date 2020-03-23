@@ -56,6 +56,13 @@ class Drinks with ChangeNotifier {
     notifyListeners();
   }
 
+  void clear() {
+    _drinks = _drink_data
+        .map((drink) => {...drink, 'quantity': 0, 'pfand_quantity': 0})
+        .toList();
+    notifyListeners();
+  }
+
   double get totalAmount {
     if (_drinks == null) return 0.0;
     double total = 0;
