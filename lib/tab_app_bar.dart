@@ -22,7 +22,7 @@ class TabAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       actions: <Widget>[
         IconButton(
-          icon: Icon(Icons.money_off),
+          icon: Icon(Icons.money_off,),
           onPressed: Provider.of<Drinks>(context, listen: false).clear,
         ),
       ],

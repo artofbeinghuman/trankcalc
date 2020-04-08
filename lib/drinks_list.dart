@@ -22,7 +22,7 @@ class DrinksPfandList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          // Text('$quantity x'),
+          Text('$quantity x'),
           IconButton(icon: Icon(Icons.add), onPressed: add),
           IconButton(icon: Icon(Icons.remove), onPressed: remove),
         ],

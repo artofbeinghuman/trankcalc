@@ -5,9 +5,6 @@ import './drinks.dart';
 import './drinks_list.dart';
 import './tab_app_bar.dart';
 
-// TODO: Move total amount into app bar
-// TODO: add tabs, one for "Getränke", other for "Pfand"
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
